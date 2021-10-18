@@ -76,26 +76,29 @@ const OutlineButton = styled.button`
     }
 `
 const PlayIcon = styled.img`
-width: 80px;
-height: 80px;
-&:hover {
-    cursor: pointer;
-    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
-}
-`
-const SocialTag = styled.a`
-margin-right:3%;
-@media (max-width: 560px) {
-    width: 100%;
-    margin-top:-2%;
-}
-`
-const SocialIcon = styled.img`
-    width: 180px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
     &:hover {
         cursor: pointer;
         text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
+    }
+`
+const SocialTag = styled.a`
+    margin-right:3%;
+    @media (max-width: 560px) {
+        width: 100%;
+        margin-top:-2%;
+    }
+`
+const SocialIcon = styled.img`
+    width: 180px;
+    &:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
+    }
+    @media (max-width: 560px) {
+        margin-top:30px;
+        width: 110px;
     }
 `
 const IconList = styled.div`

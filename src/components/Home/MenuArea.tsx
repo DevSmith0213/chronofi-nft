@@ -25,7 +25,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
     margin-top: 26px;
     @media (max-width: 880px) {
         flex-direction: column;
-        transform: translateY(${props => props.status ? '-100%' : '40%'});
+        transform: translateY(${props => props.status ? '-180%' : '30%'});
         background: rgb(${colors.main});
         opacity: 0.9;
         width: 100%;
@@ -33,7 +33,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
         z-index: 10;
         border-radius: 20px;
         border: 1px solid rgba(${colors.border});
-        height:200px;
+        height:330px;
         margin-top: 0px;
     }
 `

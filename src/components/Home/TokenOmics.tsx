@@ -54,10 +54,17 @@ const TopTitle = styled.h1`
     color:white;
     font-size:50px;
     padding-top:3%;
+    @media (max-width: 560px) {
+        padding-top:30px;
+        font-size:30px;
+    }
 `
 const RocketImg = styled.img`
     margin-top:150px;
-    width: 1480px;
+    width: 100%;
+    @media (max-width: 800px) {
+        margin-top:50px;
+    }
 `
 const Description = styled.p`
     font-size: 16px;

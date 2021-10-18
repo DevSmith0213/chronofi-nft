@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'row',
         [theme.breakpoints.down('sm')]: {
             flexDirection: 'column-reverse',
+            marginTop:0,
         },
     },
     textCont: {
@@ -57,16 +58,26 @@ const TopTitle = styled.h1`
     color:white;
     font-size:50px;
     padding-top:3%;
+    @media (max-width: 560px) {
+        padding-top:30px;
+        font-size:30px;
+    }
 `
 const BannerImg = styled.img`
     width: 90%;
     height: 100%;
+    @media (max-width: 560px) {
+        width: 70%;
+    }
 `
 const Description = styled.p`
     font-size: 16px;
     font-weight: 600;
     color: white;
     line-height: 1.5;
+    @media (max-width: 560px) {
+        padding:0 30px;
+    }
 `
 function AboutUs() {
     const classes = useStyles();

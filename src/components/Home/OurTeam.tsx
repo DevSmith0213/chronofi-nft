@@ -5,7 +5,16 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { colors } from '../../styles'
 
-import featureImage from '../../assets/images/featureImage.png'
+import Avartar1 from '../../assets/images/1.png'
+import Avartar2 from '../../assets/images/2.png'
+import Avartar3 from '../../assets/images/3.png'
+import Avartar4 from '../../assets/images/4.png'
+import Avartar5 from '../../assets/images/5.png'
+import Avartar6 from '../../assets/images/6.png'
+import Avartar7 from '../../assets/images/7.png'
+import Avartar8 from '../../assets/images/8.png'
+import Avartar9 from '../../assets/images/9.png'
+import Avartar10 from '../../assets/images/10.png'
 import telegramIcon from '../../assets/images/telegram.png'
 import onlineIcon from '../../assets/images/online.png'
 import twitterIcon from '../../assets/images/twitter.png'
@@ -47,18 +56,12 @@ const MenuContainer = styled.ul`
     height:67px;
     padding: 0 20px;
     border-radius: 5px;
-    margin-top: 80px;
+    margin-top: 100px;
     @media (max-width: 880px) {
         flex-direction: column;
-        background: rgb(${colors.main});
         opacity: 0.9;
         width: 100%;
-        position: absolute;
-        z-index: 10;
-        border-radius: 20px;
-        border: 1px solid rgba(${colors.border});
-        height:200px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 `
 const MmenuItem = styled.li`
@@ -71,6 +74,7 @@ const MmenuItem = styled.li`
     }
     @media (max-width: 880px) {
         margin: 0.5em 0;
+        font-size: 13px;
     }
     &:hover {
         cursor: pointer;
@@ -98,10 +102,12 @@ const TopTitle = styled.h1`
     color:white;
     font-size:50px;
     padding-top:3%;
+    margin-bottom:50px;
 `
-const FeatureImg = styled.img`
-    margin-top:100px;
-    width: 100%;
+const AvartarImg = styled.img`
+    margin-top:40px;
+    width: 230px;
+    padding:0 45px;
 `
 const Description = styled.p`
     font-size: 16px;
@@ -110,14 +116,16 @@ const Description = styled.p`
     line-height: 1.5;
 `
 const IconList = styled.div`
-    width:50%;
     margin: 0 auto 0 auto;
     flex-direction: row;
     justify-content:space-between;
     display: flex;
+    @media (max-width: 880px) {
+        margin: 150px auto 0 auto;
+    }
 `
 const SocialTag = styled.a`
-margin-right:3%;
+    margin-right:3%;
     @media (max-width: 560px) {
         width: 100%;
         margin-top:-2%;
@@ -125,10 +133,13 @@ margin-right:3%;
 `
 const SocialIcon = styled.img`
     width: 180px;
-    height: 45px;
     &:hover {
         cursor: pointer;
         text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
+    }
+    @media (max-width: 560px) {
+        margin-top:30px;
+        width: 110px;
     }
 `
 const FooterTxt = styled.p`
@@ -142,10 +153,22 @@ const FooterImageArea = styled.div`
     justify-content:end;
     margin-top:-120px;
     padding-bottom:50px;
+    @media (max-width: 880px) {
+        width:0%;
+        margin-top:0px;
+    }
+`
+const AvatarImageArea = styled.div`
+    width:70%;
+    margin: 0 auto;
+    text-align:center;
 `
 const FooterImage = styled.img`
     margin-right:50px;
     width:90px;
+    @media (max-width: 880px) {
+        width:0%;
+    }
 `
 
 function OurTeam() {
@@ -155,7 +178,18 @@ function OurTeam() {
             <TopTitle>
                 FOUNDING TEAM
             </TopTitle>
-            <FeatureImg src={featureImage} />
+            <AvatarImageArea>
+                <AvartarImg src={Avartar1} />
+                <AvartarImg src={Avartar2} />
+                <AvartarImg src={Avartar3} />
+                <AvartarImg src={Avartar4} />
+                <AvartarImg src={Avartar5} />
+                <AvartarImg src={Avartar6} />
+                <AvartarImg src={Avartar7} />
+                <AvartarImg src={Avartar8} />
+                <AvartarImg src={Avartar9} />
+                <AvartarImg src={Avartar10} />
+            </AvatarImageArea>
             <MenuContainer>
                 <MmenuItem><a href="#dashboard">HOME</a></MmenuItem>
                 <MmenuItem><a href="#loadMap">ABOUT</a></MmenuItem>
