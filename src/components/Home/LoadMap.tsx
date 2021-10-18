@@ -54,7 +54,7 @@ const RoadMapImg = styled.img`
 function LoadMap() {
     const classes = useStyles();
     return (
-        <ItemContainer>
+        <ItemContainer id="roadmap">
             <RoadMapImg src={loadMap} />
         </ItemContainer>
     )

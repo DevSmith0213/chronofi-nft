@@ -75,7 +75,7 @@ const Description = styled.p`
 function TokenOmics() {
     const classes = useStyles();
     return (
-        <ItemContainer>
+        <ItemContainer id="tokenomics">
             <TopTitle>
                 TOKENOMICS
             </TopTitle>

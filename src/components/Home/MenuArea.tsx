@@ -86,12 +86,12 @@ const MenuArea: React.FC<MenuAreaProps> = ({ displayMenu, connectMetaMask, accou
     return (
         <MenuContainer status={displayMenu}>
             <MmenuItem><a href="#dashboard">HOME</a></MmenuItem>
-            <MmenuItem><a href="#loadMap">ABOUT</a></MmenuItem>
-            <MmenuItem><a href="#FAQ">TOKENOMICS</a></MmenuItem>
-            <MmenuItem><a href="#footer">ROADMAP</a></MmenuItem>
-            <MmenuItem><a href="#footer">FEATURES</a></MmenuItem>
-            <MmenuItem><a href="#footer">TEAM</a></MmenuItem>
-            <MmenuItem><a href="#footer">WHITEPAPER</a></MmenuItem>
+            <MmenuItem><a href="#about">ABOUT</a></MmenuItem>
+            <MmenuItem><a href="#tokenomics">TOKENOMICS</a></MmenuItem>
+            <MmenuItem><a href="#roadmap">ROADMAP</a></MmenuItem>
+            <MmenuItem><a href="#feature">FEATURES</a></MmenuItem>
+            <MmenuItem><a href="#team">TEAM</a></MmenuItem>
+            <MmenuItem><a href="#team">WHITEPAPER</a></MmenuItem>
             {/* <MmenuItem1 onClick={connectMetaMask}>{accountID}</MmenuItem1> */}
             {/* {!displayMenu &&
                 <div style={{ display: 'flex', flexDirection: 'row' }}>

@@ -75,7 +75,7 @@ const Description = styled.p`
 function Feature() {
     const classes = useStyles();
     return (
-        <ItemContainer>
+        <ItemContainer id="feature">
             <TopTitle>
                 FEATURES
             </TopTitle>

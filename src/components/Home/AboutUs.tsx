@@ -82,7 +82,7 @@ const Description = styled.p`
 function AboutUs() {
     const classes = useStyles();
     return (
-        <ItemContainer>
+        <ItemContainer id="about">
             <TopTitle>
                 ABOUT US
             </TopTitle>

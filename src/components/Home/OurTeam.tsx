@@ -174,7 +174,7 @@ const FooterImage = styled.img`
 function OurTeam() {
     const classes = useStyles();
     return (
-        <ItemContainer>
+        <ItemContainer id="team">
             <TopTitle>
                 FOUNDING TEAM
             </TopTitle>
@@ -192,12 +192,12 @@ function OurTeam() {
             </AvatarImageArea>
             <MenuContainer>
                 <MmenuItem><a href="#dashboard">HOME</a></MmenuItem>
-                <MmenuItem><a href="#loadMap">ABOUT</a></MmenuItem>
-                <MmenuItem><a href="#FAQ">TOKENOMICS</a></MmenuItem>
-                <MmenuItem><a href="#footer">ROADMAP</a></MmenuItem>
-                <MmenuItem><a href="#footer">FEATURES</a></MmenuItem>
-                <MmenuItem><a href="#footer">TEAM</a></MmenuItem>
-                <MmenuItem><a href="#footer">WHITEPAPER</a></MmenuItem>
+                <MmenuItem><a href="#about">ABOUT</a></MmenuItem>
+                <MmenuItem><a href="#tokenomics">TOKENOMICS</a></MmenuItem>
+                <MmenuItem><a href="#roadmap">ROADMAP</a></MmenuItem>
+                <MmenuItem><a href="#feature">FEATURES</a></MmenuItem>
+                <MmenuItem><a href="#team">TEAM</a></MmenuItem>
+                <MmenuItem><a href="#team">WHITEPAPER</a></MmenuItem>
             </MenuContainer>
             <IconList>
                 <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
