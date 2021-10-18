@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         marginTop:-150,
         flexDirection: 'row',
+        [theme.breakpoints.down('md')]: {
+            marginTop:0,
+        },
         [theme.breakpoints.down('sm')]: {
             flexDirection: 'column-reverse',
             marginTop:0,
