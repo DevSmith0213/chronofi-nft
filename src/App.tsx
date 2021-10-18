@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import BuccaneerHeader from './components/Home/BuccaneerHeader'
 import TopContainer from './components/Home/TopContainer'
-import ItemList from './components/Home/ItemList'
+import AboutUs from './components/Home/AboutUs'
+import TokenOmics from './components/Home/TokenOmics'
 import ImageContainer from './components/Home/ImageContainer'
 import ImageContainer1 from './components/Home/ImageContainer1'
 import ImageContainer2 from './components/Home/ImageContainer2'
@@ -217,8 +218,9 @@ function App() {
     <ScreenWrapper>
       <BuccaneerHeader connectMetaMask={connectMetaMask} accountID={accountID} />
       <TopContainer />
-      <ItemList />
-      <ImageContainer />
+      <AboutUs />
+      <TokenOmics />
+      {/* <ImageContainer /> */}
       {/* <Title id="loadMap" style={{ width: '90%', textAlign: 'center', marginLeft: '5%' }}>LAUNCH ROADMAP</Title>
       <ImageContainer1 url={20} first={true} last={false} title="$10,000 Shiba Charity Donation" description="Many Shiba Inus died in bombing raids during World War II and it was due to a small number of dog lovers that acted to save their amazing breed from extinction. Here at Shiba Society, we will continue to support their legacy by donating $10,000 to a trusted and transparent Shiba Inu breeder, to commend their efforts in breeding for the community." />
       <ImageContainer1 url={40} first={false} last={false} title="$20,000 Community Grant" description="The NFT space is constantly evolving and we want to support our community members in further experimenting on the possibilities that this New World of NFTs can deliver. A project team will be established to engage with our community members who want to take on projects but have funding constraints. We want to ensure the grant is given to the person or groups of people who are most deserving and are aligned with our core values." />

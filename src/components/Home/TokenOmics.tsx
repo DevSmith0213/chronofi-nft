@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
     root1: {
         display: 'flex',
-        marginTop:-150,
+        marginTop: -150,
         flexDirection: 'row',
         [theme.breakpoints.down('sm')]: {
             flexDirection: 'column-reverse',
@@ -68,12 +68,12 @@ const Description = styled.p`
     color: white;
     line-height: 1.5;
 `
-function ItemList() {
+function TokenOmics() {
     const classes = useStyles();
     return (
         <ItemContainer>
             <TopTitle>
-                ABOUT US
+                TOKENOMICS
             </TopTitle>
             <Grid container spacing={2} className={classes.root}>
                 <Grid item xs={12} md={3} className={classes.imgCont}>
@@ -100,4 +100,4 @@ function ItemList() {
     )
 }
 
-export default ItemList
+export default TokenOmics
