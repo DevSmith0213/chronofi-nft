@@ -4,7 +4,7 @@ import Card from './Card'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import rocketImage from '../../assets/images/rocketImage.png'
+import featureImage from '../../assets/images/featureImage.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -55,9 +55,9 @@ const TopTitle = styled.h1`
     font-size:50px;
     padding-top:3%;
 `
-const RocketImg = styled.img`
-    margin-top:150px;
-    width: 1480px;
+const FeatureImg = styled.img`
+    margin-top:100px;
+    width: 100%;
 `
 const Description = styled.p`
     font-size: 16px;
@@ -65,16 +65,16 @@ const Description = styled.p`
     color: white;
     line-height: 1.5;
 `
-function TokenOmics() {
+function Feature() {
     const classes = useStyles();
     return (
         <ItemContainer>
             <TopTitle>
-                TOKENOMICS
+                FEATURES
             </TopTitle>
-            <RocketImg src={rocketImage} />
+            <FeatureImg src={featureImage} />
         </ItemContainer>
     )
 }
 
-export default TokenOmics
+export default Feature

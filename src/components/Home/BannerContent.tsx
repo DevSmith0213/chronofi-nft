@@ -7,6 +7,7 @@ import { colors } from '../../styles'
 
 import telegramIcon from '../../assets/images/telegram.png'
 import twitterIcon from '../../assets/images/twitter.png'
+import onlineIcon from '../../assets/images/online.png'
 import buttonplay from '../../assets/images/buttonplay.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -114,9 +115,9 @@ function BannerContent() {
                 </ContainerTitle>
                 <PlayIcon src={buttonplay} ></PlayIcon>
                 <IconList>
+                    <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href=""><SocialIcon src={onlineIcon} ></SocialIcon></SocialTag>
                     <SocialTag target="_blank" href=""><SocialIcon src={twitterIcon} ></SocialIcon></SocialTag>
-                    <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
-                    <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
                 </IconList>
             </BottomContainer>
         </Container >

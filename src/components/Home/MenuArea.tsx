@@ -40,7 +40,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
 const MmenuItem = styled.li`
     color: rgb(${colors.fontColor});
     font-size: 22px;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0 1em;
     @media (max-width: 1000px) {
         margin: 0 0.3em;

@@ -6,18 +6,11 @@ import TopContainer from './components/Home/TopContainer'
 import AboutUs from './components/Home/AboutUs'
 import TokenOmics from './components/Home/TokenOmics'
 import LoadMap from './components/Home/LoadMap'
-import ImageContainer from './components/Home/ImageContainer'
-import ImageContainer1 from './components/Home/ImageContainer1'
-import ImageContainer2 from './components/Home/ImageContainer2'
-import TeamMember from './components/Home/TeamMember'
-import MintArea from './components/Home/MintArea'
-import Footer from './components/Home/Footer'
+import Feature from './components/Home/Feature'
+import OurTeam from './components/Home/OurTeam'
 import ScreenWrapper from './components/Home/ScreenWrapper'
 import styled from 'styled-components'
 import { colors } from './styles'
-
-import character1 from './assets/images/character1.png';
-import character2 from './assets/images/character2.png';
 import shibaAbi from './abi/Shiba.json'
 // import shibaContract from './shiba';
 import Web3 from 'web3';
@@ -122,13 +115,6 @@ function App() {
     }
   }
 
-  const getMaxValue = async () => {
-    setAmount(maxNum)
-    totalprice = itemPrice * maxNum
-    const etherValue = Web3.utils.fromWei(totalprice.toString(), 'ether');
-    setTotalPrice(parseFloat(etherValue))
-  }
-
   const getAccountId = async () => {
     localStorage.setItem('storeName', "true");
     const web3 = window.web3
@@ -170,30 +156,6 @@ function App() {
     }
   }
 
-  const changeAmount = (num: number) => {
-
-    if (num == -1) {
-      if (amount == 0) {
-        setAmount(0)
-      } else {
-        let totalAmonut = amount + num
-        setAmount(totalAmonut)
-        totalprice = itemPrice * totalAmonut
-        const etherValue = Web3.utils.fromWei(totalprice.toString(), 'ether');
-        setTotalPrice(parseFloat(etherValue))
-      }
-    } else if (num == 1) {
-      if (amount == maxNum) {
-        setAmount(maxNum)
-      } else {
-        let totalAmonut: number = amount + num
-        setAmount(totalAmonut)
-        totalprice = itemPrice * totalAmonut
-        const etherValue = Web3.utils.fromWei(totalprice.toString(), 'ether');
-        setTotalPrice(parseFloat(etherValue))
-      }
-    }
-  }
 
   const buyHandler = async () => {
     if (totalPrice == 0) {
@@ -222,17 +184,8 @@ function App() {
       <AboutUs />
       <TokenOmics />
       <LoadMap />
-      {/* <ImageContainer /> */}
-      {/* <Title id="loadMap" style={{ width: '90%', textAlign: 'center', marginLeft: '5%' }}>LAUNCH ROADMAP</Title>
-      <ImageContainer1 url={20} first={true} last={false} title="$10,000 Shiba Charity Donation" description="Many Shiba Inus died in bombing raids during World War II and it was due to a small number of dog lovers that acted to save their amazing breed from extinction. Here at Shiba Society, we will continue to support their legacy by donating $10,000 to a trusted and transparent Shiba Inu breeder, to commend their efforts in breeding for the community." />
-      <ImageContainer1 url={40} first={false} last={false} title="$20,000 Community Grant" description="The NFT space is constantly evolving and we want to support our community members in further experimenting on the possibilities that this New World of NFTs can deliver. A project team will be established to engage with our community members who want to take on projects but have funding constraints. We want to ensure the grant is given to the person or groups of people who are most deserving and are aligned with our core values." />
-      <ImageContainer1 url={60} first={false} last={false} title="Limited Release SHIBBYS" description={["Work will commence for the design and release of a small batch of limited release SHIBBYS. We have many in the works, already, but ultimately the themes such as pop culture, memes, sports, etc. will be decided by our ", <a target="_blank" href="https://discord.gg/d9K7FXF4YB">Discord</a>, " community and only owners of a SHIBBY will have a chance at purchasing these limited releases."]} />
-      <ImageContainer1 url={80} first={false} last={false} title="2nd Generation SHIBBYS" description="A project team will be established for the design, development and implementation of the 2nd generation SHIBBYS. This will include all the appropriate documentation including a White Paper, breeding instructions etc. We will reward early adopters whilst slowly increasing the number of SHIBBY owners too!" />
-      <ImageContainer1 url={100} first={false} last={true} title="$30,000 Successful Launch Giveaway!" description="Launch success! To reward our early adopters, a random selection of 30 SHIBBYS will be airdropped, with $1000 worth of ETH each into their owner's wallets. The more SHIBBYS you own, the higher your chances of winning the giveaway! Now, off to the moon Shiba Society!" />
-      <MintArea />
-      <ImageContainer2 title="FAIR DROP" description1="No whitelists, no free airdrops, no pricing tiers, even us founders get none." description2="All 1st generation SHIBBYS will be all sold at a price of 0.068 ETH." description3={["All future releases will be voted by our community on our ", <a target="_blank" href="https://discord.gg/d9K7FXF4YB">Discord</a>, " and announced via", <a style={{ color: '#004aad' }} target="_blank" href="https://twitter.com/ShibaSocietyNFT">Twitter.</a>]} />
-      <TeamMember url={character1} url1={character2} title="TEAM MEMBERS" />
-      <Footer limitItemNum={limitItemNum} ownEthValue={ownEthValue} changeAmount={changeAmount} amount={amount} getMaxValue={getMaxValue} totalPrice={totalPrice} totalSupply={totalSupply} buyHandler={buyHandler} /> */}
+      <Feature />
+      <OurTeam />
     </ScreenWrapper>
   )
 }

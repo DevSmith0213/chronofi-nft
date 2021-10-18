@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from './Card'
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 import loadMap from '../../assets/images/loadMap.png'
@@ -50,6 +48,7 @@ const ItemContainer = styled.div`
     }
 `
 const RoadMapImg = styled.img`
+    margin:0;
     width: 100%;
 `
 function LoadMap() {
