@@ -52,7 +52,7 @@ const ContainerTitle = styled.p`
     color:white;
     text-align:center;
     // margin:30rem auto 0 auto;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 100 !important;
 `
 const OutlineButton = styled.button`
@@ -90,8 +90,8 @@ margin-right:3%;
 }
 `
 const SocialIcon = styled.img`
-    width: 200px;
-    height: 54px;
+    width: 180px;
+    height: 45px;
     &:hover {
         cursor: pointer;
         text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue

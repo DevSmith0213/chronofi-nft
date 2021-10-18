@@ -7,6 +7,7 @@ const LogoContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left:3rem;
 `
 
 const LogoTitle = styled.h3`
