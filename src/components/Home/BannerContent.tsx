@@ -114,9 +114,9 @@ function BannerContent() {
                 </ContainerTitle>
                 <PlayIcon src={buttonplay} ></PlayIcon>
                 <IconList>
-                    <SocialTag target="_blank" href="https://discord.gg/d9K7FXF4YB"><SocialIcon src={twitterIcon} ></SocialIcon></SocialTag>
-                    <SocialTag target="_blank" href="https://twitter.com/ShibaSocietyNFT"><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
-                    <SocialTag target="_blank" href="https://twitter.com/ShibaSocietyNFT"><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href=""><SocialIcon src={twitterIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href=""><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
                 </IconList>
             </BottomContainer>
         </Container >
