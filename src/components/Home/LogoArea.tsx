@@ -19,7 +19,7 @@ const LogoTitle = styled.h3`
 function LogoArea() {
     return (
         <LogoContainer>
-            <img src={logo} style={{ width: 52, height: 52 }} alt="logo" />
+            <img src={logo} style={{ width: 80, height: 80 }} alt="logo" />
         </LogoContainer>
     )
 }

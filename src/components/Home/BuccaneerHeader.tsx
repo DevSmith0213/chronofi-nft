@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 `
 
 interface Props {

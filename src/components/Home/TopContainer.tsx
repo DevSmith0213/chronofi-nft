@@ -5,7 +5,7 @@ import BannerContent from './BannerContent'
 
 const BannerContainer = styled.div`
     width: 100%;
-    margin: -100px auto;
+    margin: -100px auto 0 auto;
 `
 
 function TopContainer() {

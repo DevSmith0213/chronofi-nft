@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { colors } from '../../styles'
 
 import telegramIcon from '../../assets/images/telegram.png'
-import discardIcon from '../../assets/images/discard.png'
+import twitterIcon from '../../assets/images/twitter.png'
+import buttonplay from '../../assets/images/buttonplay.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,18 +29,31 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const BannerImg = styled.img`
+const Container = styled.div`
     width: 100%;
-    height: calc(100vh-150px);
-`
-const ButtonContainer = styled.div`
-    width: 100%;
+    height:100vh;
+    background-image: url(/bannerImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: space-around;
-    @media (max-width: 550px) {
-        flex-direction: column;
-        align-items: center;
-    }
+    align-items:center;
+    flex-direction:column;
+`
+const BottomContainer = styled.div`
+    position:absolute;
+    bottom:80px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+`
+const ContainerTitle = styled.p`
+    display:flex;
+    color:white;
+    text-align:center;
+    // margin:30rem auto 0 auto;
+    font-size: 36px;
+    font-weight: 100 !important;
 `
 const OutlineButton = styled.button`
     width: 263px;
@@ -48,7 +62,6 @@ const OutlineButton = styled.button`
     color: rgb(${colors.fontColor});
     font-size:46px;
     background: #D35BFF;
-    margin: -15% 0;
     transition: all 0.2s ease-out;
     @media (max-width: 720px) {
         width: 100px;
@@ -61,30 +74,30 @@ const OutlineButton = styled.button`
         // background: rgb(${colors.fontColor});
     }
 `
-const NoBorderButton = styled(OutlineButton)`
-    border: none;
+const PlayIcon = styled.img`
+width: 80px;
+height: 80px;
+&:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
+}
 `
-
-const SocialIcon = styled.img`
+const SocialTag = styled.a`
+margin-right:3%;
+@media (max-width: 560px) {
     width: 100%;
-    height: 100%;
+    margin-top:-2%;
+}
+`
+const SocialIcon = styled.img`
+    width: 200px;
+    height: 54px;
     &:hover {
         cursor: pointer;
         text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
     }
 `
-const SocialTag = styled.a`
-    width: 40%;
-    height: 10%;
-    margin-right:3%;
-    @media (max-width: 560px) {
-        width: 100%;
-        margin-top:-2%;
-    }
-`
 const IconList = styled.div`
-    width: 50%;
-    height: 7%;
     margin: 0 auto 0 auto;
     flex-direction: row;
     justify-content:space-between;
@@ -94,16 +107,19 @@ const IconList = styled.div`
 function BannerContent() {
     const classes = useStyles();
     return (
-        <div style={{ alignItems: 'center', justifyContent: 'center', width: '100%', paddingBottom: '12%' }}>
-            <BannerImg src={bannerImage} />
-            {/* <div style={{ alignItems: 'center', justifyContent: 'center', width: '100%', display: 'flex', marginTop: '-12%' }}>
-                <OutlineButton><a href="#footer">Mint now</a></OutlineButton>
-            </div>
-            <IconList style={{ marginTop: '2%' }}>
-                <SocialTag target="_blank" href="https://discord.gg/d9K7FXF4YB"><SocialIcon src={discardIcon} ></SocialIcon></SocialTag>
-                <SocialTag target="_blank" href="https://twitter.com/ShibaSocietyNFT"><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
-            </IconList> */}
-        </div >
+        <Container>
+            <BottomContainer>
+                <ContainerTitle>
+                    Monster come to invade earth, Robots save the earth.
+                </ContainerTitle>
+                <PlayIcon src={buttonplay} ></PlayIcon>
+                <IconList>
+                    <SocialTag target="_blank" href="https://discord.gg/d9K7FXF4YB"><SocialIcon src={twitterIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href="https://twitter.com/ShibaSocietyNFT"><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
+                    <SocialTag target="_blank" href="https://twitter.com/ShibaSocietyNFT"><SocialIcon src={telegramIcon} ></SocialIcon></SocialTag>
+                </IconList>
+            </BottomContainer>
+        </Container >
     )
 }
 

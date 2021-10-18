@@ -21,7 +21,6 @@ const MenuContainer = styled.ul<MenuContainerProps>`
     transition: all 0.3s ease-in-out;
     height:67px;
     padding: 0 20px;
-    border: 2px solid #FF001F;
     border-radius: 5px;
     margin-top: 26px;
     @media (max-width: 880px) {
@@ -40,7 +39,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
 `
 const MmenuItem = styled.li`
     color: rgb(${colors.fontColor});
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     margin: 0 1em;
     @media (max-width: 1000px) {
@@ -56,7 +55,7 @@ const MmenuItem = styled.li`
 `
 const MmenuItem1 = styled.li`
     color: rgb(${colors.fontColor});
-    font-size: 16px;
+    
     font-weight: 400;
     background: rgb(${colors.red});
     margin: 0 1em;
