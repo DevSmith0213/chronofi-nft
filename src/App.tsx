@@ -219,10 +219,7 @@ function App() {
       <TopContainer />
       <ItemList />
       <ImageContainer />
-      <div style={{ alignItems: 'center', justifyContent: 'center', width: '100%', display: 'flex', }}>
-        <OutlineButton><a href="#footer">Get your unique one-of-a-kind SHIBBY today</a></OutlineButton>
-      </div>
-      <Title id="loadMap" style={{ width: '90%', textAlign: 'center', marginLeft: '5%' }}>LAUNCH ROADMAP</Title>
+      {/* <Title id="loadMap" style={{ width: '90%', textAlign: 'center', marginLeft: '5%' }}>LAUNCH ROADMAP</Title>
       <ImageContainer1 url={20} first={true} last={false} title="$10,000 Shiba Charity Donation" description="Many Shiba Inus died in bombing raids during World War II and it was due to a small number of dog lovers that acted to save their amazing breed from extinction. Here at Shiba Society, we will continue to support their legacy by donating $10,000 to a trusted and transparent Shiba Inu breeder, to commend their efforts in breeding for the community." />
       <ImageContainer1 url={40} first={false} last={false} title="$20,000 Community Grant" description="The NFT space is constantly evolving and we want to support our community members in further experimenting on the possibilities that this New World of NFTs can deliver. A project team will be established to engage with our community members who want to take on projects but have funding constraints. We want to ensure the grant is given to the person or groups of people who are most deserving and are aligned with our core values." />
       <ImageContainer1 url={60} first={false} last={false} title="Limited Release SHIBBYS" description={["Work will commence for the design and release of a small batch of limited release SHIBBYS. We have many in the works, already, but ultimately the themes such as pop culture, memes, sports, etc. will be decided by our ", <a target="_blank" href="https://discord.gg/d9K7FXF4YB">Discord</a>, " community and only owners of a SHIBBY will have a chance at purchasing these limited releases."]} />
@@ -231,7 +228,7 @@ function App() {
       <MintArea />
       <ImageContainer2 title="FAIR DROP" description1="No whitelists, no free airdrops, no pricing tiers, even us founders get none." description2="All 1st generation SHIBBYS will be all sold at a price of 0.068 ETH." description3={["All future releases will be voted by our community on our ", <a target="_blank" href="https://discord.gg/d9K7FXF4YB">Discord</a>, " and announced via", <a style={{ color: '#004aad' }} target="_blank" href="https://twitter.com/ShibaSocietyNFT">Twitter.</a>]} />
       <TeamMember url={character1} url1={character2} title="TEAM MEMBERS" />
-      <Footer limitItemNum={limitItemNum} ownEthValue={ownEthValue} changeAmount={changeAmount} amount={amount} getMaxValue={getMaxValue} totalPrice={totalPrice} totalSupply={totalSupply} buyHandler={buyHandler} />
+      <Footer limitItemNum={limitItemNum} ownEthValue={ownEthValue} changeAmount={changeAmount} amount={amount} getMaxValue={getMaxValue} totalPrice={totalPrice} totalSupply={totalSupply} buyHandler={buyHandler} /> */}
     </ScreenWrapper>
   )
 }

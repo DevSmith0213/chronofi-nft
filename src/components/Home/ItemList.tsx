@@ -10,10 +10,13 @@ import consent from '../../assets/images/animation2.gif'
 import coinbox from '../../assets/images/animation3.gif'
 
 const ItemContainer = styled.div`
-    width: 75%;
-    height:100%;
+    width: 100%;
+    height:100vh;
     margin: 0em auto 3em;
-    background: rgb(${colors.main});
+    background-image: url(/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     @media (max-width: 800px) {
         margin: 4em auto 3em;
     }
@@ -22,7 +25,7 @@ const ItemContainer = styled.div`
 function ItemList() {
     return (
         <ItemContainer>
-            <Grid container spacing={4}>
+            {/* <Grid container spacing={4}>
                 <Grid item xs={12} md={4}>
                     <Card url={icognito} />
                 </Grid>
@@ -32,7 +35,7 @@ function ItemList() {
                 <Grid item xs={12} md={4}>
                     <Card url={coinbox} />
                 </Grid>
-            </Grid>
+            </Grid> */}
         </ItemContainer>
     )
 }
