@@ -49,7 +49,7 @@ const ItemContainer = styled.div`
     background-size: cover;
     background-position: center;
     @media (max-width: 800px) {
-        padding: 4em auto 3em;
+        padding: 4em auto;
     }
 `
 const TopTitle = styled.h1`

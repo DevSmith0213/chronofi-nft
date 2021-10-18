@@ -5,6 +5,7 @@ import BuccaneerHeader from './components/Home/BuccaneerHeader'
 import TopContainer from './components/Home/TopContainer'
 import AboutUs from './components/Home/AboutUs'
 import TokenOmics from './components/Home/TokenOmics'
+import LoadMap from './components/Home/LoadMap'
 import ImageContainer from './components/Home/ImageContainer'
 import ImageContainer1 from './components/Home/ImageContainer1'
 import ImageContainer2 from './components/Home/ImageContainer2'
@@ -220,6 +221,7 @@ function App() {
       <TopContainer />
       <AboutUs />
       <TokenOmics />
+      <LoadMap />
       {/* <ImageContainer /> */}
       {/* <Title id="loadMap" style={{ width: '90%', textAlign: 'center', marginLeft: '5%' }}>LAUNCH ROADMAP</Title>
       <ImageContainer1 url={20} first={true} last={false} title="$10,000 Shiba Charity Donation" description="Many Shiba Inus died in bombing raids during World War II and it was due to a small number of dog lovers that acted to save their amazing breed from extinction. Here at Shiba Society, we will continue to support their legacy by donating $10,000 to a trusted and transparent Shiba Inu breeder, to commend their efforts in breeding for the community." />

@@ -4,7 +4,7 @@ import Card from './Card'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import rocketImage from '../../assets/images/rocketImage.png'
+import loadMap from '../../assets/images/loadMap.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const ItemContainer = styled.div`
     width: 100%;
     height:100%;
-    margin: 0em auto 3em;
+    margin: 0em auto;
     background-image: url(/background1.png);
     display:flex;
     align-items:center;
@@ -49,32 +49,16 @@ const ItemContainer = styled.div`
         padding: 4em auto;
     }
 `
-const TopTitle = styled.h1`
-    margin:0;
-    color:white;
-    font-size:50px;
-    padding-top:3%;
+const RoadMapImg = styled.img`
+    width: 100%;
 `
-const RocketImg = styled.img`
-    margin-top:150px;
-    width: 1480px;
-`
-const Description = styled.p`
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    line-height: 1.5;
-`
-function TokenOmics() {
+function LoadMap() {
     const classes = useStyles();
     return (
         <ItemContainer>
-            <TopTitle>
-                TOKENOMICS
-            </TopTitle>
-            <RocketImg src={rocketImage} />
+            <RoadMapImg src={loadMap} />
         </ItemContainer>
     )
 }
 
-export default TokenOmics
+export default LoadMap
