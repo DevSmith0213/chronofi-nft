@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 import featureImage from '../../assets/images/featureImage.png'
+import feature1 from '../../assets/images/feature1.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,15 +63,18 @@ const TopTitle = styled.h1`
 const FeatureImg = styled.img`
     margin-top:100px;
     width: 100%;
-    @media (max-width: 560px) {
+    @media (max-width: 880px) {
+        display:none;
         margin-top:50px;
     }
 `
-const Description = styled.p`
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    line-height: 1.5;
+const FeatureImg1 = styled.img`
+    display:none;
+    @media (max-width: 880px) {
+        display:flex;
+        width: 100%;
+        margin-top:50px;
+    }
 `
 function Feature() {
     const classes = useStyles();
@@ -80,6 +84,7 @@ function Feature() {
                 FEATURES
             </TopTitle>
             <FeatureImg src={featureImage} />
+            <FeatureImg1 src={feature1} />
         </ItemContainer>
     )
 }

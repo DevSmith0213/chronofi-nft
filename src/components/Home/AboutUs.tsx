@@ -63,7 +63,7 @@ const TopTitle = styled.h1`
     padding-top:3%;
     @media (max-width: 560px) {
         padding-top:30px;
-        font-size:30px;
+        font-size:25px;
     }
 `
 const BannerImg = styled.img`
@@ -89,7 +89,7 @@ function AboutUs() {
             <TopTitle>
                 ABOUT US
             </TopTitle>
-            <Grid container spacing={2} className={classes.root}>
+            <Grid container className={classes.root}>
                 <Grid item xs={12} md={3} className={classes.imgCont}>
                     <BannerImg src={character1} />
                 </Grid>
@@ -99,7 +99,7 @@ function AboutUs() {
                     </Description>
                 </Grid>
             </Grid>
-            <Grid container spacing={2} className={classes.root1}>
+            <Grid container className={classes.root1}>
                 <Grid item xs={12} md={3}></Grid>
                 <Grid item xs={12} md={6} className={classes.textCont}>
                     <Description>

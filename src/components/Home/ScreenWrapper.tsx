@@ -8,6 +8,8 @@ interface Props {
 const AppContainer = styled.div`
     background-color: rgb(${colors.main});
     width: 100%;
+    margin: 0;
+    padding: 0;
 `
 
 const ScreenWrapper: React.FC<Props> = ({ children }) => {

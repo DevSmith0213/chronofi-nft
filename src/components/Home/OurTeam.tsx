@@ -103,11 +103,19 @@ const TopTitle = styled.h1`
     font-size:50px;
     padding-top:3%;
     margin-bottom:50px;
+    @media (max-width: 560px) {
+        padding-top:30px;
+        font-size:25px;
+    }
 `
 const AvartarImg = styled.img`
     margin-top:40px;
     width: 230px;
     padding:0 45px;
+    @media (max-width: 1000px) {
+        width: 30%;
+        padding:10px;
+    }
 `
 const Description = styled.p`
     font-size: 16px;
@@ -146,6 +154,9 @@ const FooterTxt = styled.p`
     color:white;
     font-size:24px;
     font-weight:300;
+    @media (max-width: 560px) {
+        font-size:20px;
+    }
 `
 const FooterImageArea = styled.div`
     width:100%;
@@ -162,6 +173,9 @@ const AvatarImageArea = styled.div`
     width:70%;
     margin: 0 auto;
     text-align:center;
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `
 const FooterImage = styled.img`
     margin-right:50px;

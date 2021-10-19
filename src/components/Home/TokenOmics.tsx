@@ -55,17 +55,26 @@ const TopTitle = styled.h1`
     color:white;
     font-size:50px;
     margin-top:-90px;
+    @media (max-width: 1250px) {
+        margin-top:0px;
+    }
     @media (max-width: 560px) {
-        padding-top:30px;
+        margin-top:0px;
         font-size:30px;
     }
 `
 const RocketImg = styled.img`
-    margin-top:150px;
-    width: 100%;
+    margin-top:100px;
+    // overflow:hidden;
+    width: 1300px;
     @media (max-width: 800px) {
         margin-top:50px;
     }
+`
+const RocketImgArea = styled.div`
+    margin-top:70px;
+    width: 1300px;
+    overflow-y:hidden;
 `
 const ToptImg = styled.img`
     margin-top:0px;
@@ -88,7 +97,9 @@ function TokenOmics() {
             <TopTitle>
                 TOKENOMICS
             </TopTitle>
-            <RocketImg src={rocketImage} />
+            <RocketImgArea>
+                <RocketImg src={rocketImage} />
+            </RocketImgArea>
         </ItemContainer>
     )
 }

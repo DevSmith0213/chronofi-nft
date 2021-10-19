@@ -23,7 +23,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
     padding: 0 20px;
     border-radius: 5px;
     margin-top: 26px;
-    @media (max-width: 880px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         transform: translateY(${props => props.status ? '-180%' : '30%'});
         background: rgb(${colors.main});
@@ -42,6 +42,9 @@ const MmenuItem = styled.li`
     font-size: 22px;
     font-weight: bold;
     margin: 0 1em;
+    @media (max-width: 1200px) {
+        font-size: 18px;
+    }
     @media (max-width: 1000px) {
         margin: 0 0.3em;
     }

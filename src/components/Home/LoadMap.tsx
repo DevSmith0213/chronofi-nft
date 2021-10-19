@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles';
 
 import loadMap from '../../assets/images/loadMap.png'
+import roadMap1 from '../../assets/images/roadMap1.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,12 +51,24 @@ const ItemContainer = styled.div`
 const RoadMapImg = styled.img`
     margin:0;
     width: 100%;
+    @media (max-width: 800px) {
+        display: none;
+    }
+`
+const RoadMapImg1 = styled.img`
+    margin:0;
+    display: none;
+    @media (max-width: 800px) {
+        width: 100%;
+        display: flex;
+    }
 `
 function LoadMap() {
     const classes = useStyles();
     return (
         <ItemContainer id="roadmap">
             <RoadMapImg src={loadMap} />
+            <RoadMapImg1 src={roadMap1} />
         </ItemContainer>
     )
 }
