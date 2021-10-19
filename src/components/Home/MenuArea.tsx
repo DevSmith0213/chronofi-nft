@@ -33,7 +33,7 @@ const MenuContainer = styled.ul<MenuContainerProps>`
         z-index: 10;
         border-radius: 20px;
         border: 1px solid rgba(${colors.border});
-        height:330px;
+        height:280px;
         margin-top: 0px;
     }
 `

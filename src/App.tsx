@@ -182,7 +182,7 @@ function App() {
       <BuccaneerHeader connectMetaMask={connectMetaMask} accountID={accountID} />
       <TopContainer />
       <AboutUs />
-      {/* <TokenOmics /> */}
+      <TokenOmics />
       <LoadMap />
       <Feature />
       <OurTeam />

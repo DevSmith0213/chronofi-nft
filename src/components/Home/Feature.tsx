@@ -63,14 +63,14 @@ const TopTitle = styled.h1`
 const FeatureImg = styled.img`
     margin-top:100px;
     width: 100%;
-    @media (max-width: 880px) {
+    @media (max-width: 800px) {
         display:none;
         margin-top:50px;
     }
 `
 const FeatureImg1 = styled.img`
     display:none;
-    @media (max-width: 880px) {
+    @media (max-width: 800px) {
         display:flex;
         width: 100%;
         margin-top:50px;

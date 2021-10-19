@@ -147,7 +147,7 @@ const SocialIcon = styled.img`
     }
     @media (max-width: 560px) {
         margin-top:30px;
-        width: 110px;
+        width: 100px;
     }
 `
 const FooterTxt = styled.p`
