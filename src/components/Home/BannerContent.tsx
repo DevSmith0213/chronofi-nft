@@ -9,6 +9,8 @@ import telegramIcon from '../../assets/images/telegram.png'
 import twitterIcon from '../../assets/images/twitter.png'
 import onlineIcon from '../../assets/images/online.png'
 import buttonplay from '../../assets/images/buttonplay.png'
+import landingBottom from '../../assets/images/landingBottom.png'
+import topImage from '../../assets/images/topImage.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,28 +35,36 @@ const useStyles = makeStyles((theme) => ({
 const Container = styled.div`
     width: 100%;
     height:100vh;
-    background-image: url(/bannerImage.png);
+    background-image: url(/background4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items:center;
     flex-direction:column;
+    justify-content:center;
 `
 const BottomContainer = styled.div`
     position:absolute;
-    bottom:80px;
+    bottom:-15px;
     display:flex;
     align-items:center;
     flex-direction:column;
+    @media (max-width: 660px) {
+        bottom:0px;
+    }
 `
 const ContainerTitle = styled.p`
     display:flex;
     color:white;
     text-align:center;
-    // margin:30rem auto 0 auto;
+    margin:0rem auto 0 auto;
     font-size: 32px;
     font-weight: 100 !important;
+    @media (max-width: 660px) {
+        font-size: 22px;
+        width:90%
+    }
 `
 const OutlineButton = styled.button`
     width: 263px;
@@ -78,9 +88,13 @@ const OutlineButton = styled.button`
 const PlayIcon = styled.img`
     width: 80px;
     height: 80px;
+    margin-bottom:80px;
     &:hover {
         cursor: pointer;
         text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em darkblue
+    }
+    @media (max-width: 660px) {
+        margin-bottom:10px;
     }
 `
 const SocialTag = styled.a`
@@ -101,17 +115,36 @@ const SocialIcon = styled.img`
         width: 110px;
     }
 `
+const BottomImage = styled.img`
+    position:absolute;
+    bottom:0px;
+    width:100vw;
+    height:15rem;
+    @media (max-width: 660px) {
+        height:5rem;
+    }
+`
+const TopImage = styled.img`
+    width:55%;
+    @media (max-width: 1300px) {
+        width:75%;
+    }
+`
 const IconList = styled.div`
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0px auto;
     flex-direction: row;
     justify-content:space-between;
     display: flex;
+    @media (max-width: 660px) {
+        margin: 0 auto 80px auto;
+    }
 `
 
 function BannerContent() {
     const classes = useStyles();
     return (
         <Container>
+            <TopImage src={topImage} />
             <BottomContainer>
                 <ContainerTitle>
                     Monster come to invade earth, Robots save the earth.
@@ -122,6 +155,7 @@ function BannerContent() {
                     <SocialTag target="_blank" href=""><SocialIcon src={onlineIcon} ></SocialIcon></SocialTag>
                     <SocialTag target="_blank" href=""><SocialIcon src={twitterIcon} ></SocialIcon></SocialTag>
                 </IconList>
+                <BottomImage src={landingBottom} ></BottomImage>
             </BottomContainer>
         </Container >
     )

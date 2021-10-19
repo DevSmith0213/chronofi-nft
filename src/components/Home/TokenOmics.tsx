@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 import rocketImage from '../../assets/images/rocketImage.png'
+import tokenTop from '../../assets/images/tokenTop.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,7 +54,7 @@ const TopTitle = styled.h1`
     margin:0;
     color:white;
     font-size:50px;
-    padding-top:3%;
+    margin-top:-90px;
     @media (max-width: 560px) {
         padding-top:30px;
         font-size:30px;
@@ -61,6 +62,13 @@ const TopTitle = styled.h1`
 `
 const RocketImg = styled.img`
     margin-top:150px;
+    width: 100%;
+    @media (max-width: 800px) {
+        margin-top:50px;
+    }
+`
+const ToptImg = styled.img`
+    margin-top:0px;
     width: 100%;
     @media (max-width: 800px) {
         margin-top:50px;
@@ -76,6 +84,7 @@ function TokenOmics() {
     const classes = useStyles();
     return (
         <ItemContainer id="tokenomics">
+            <ToptImg src={tokenTop} />
             <TopTitle>
                 TOKENOMICS
             </TopTitle>
